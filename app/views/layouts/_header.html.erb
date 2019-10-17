@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/assets/header.css.scss"> 
+
+<header class="navbar navbar-dark bg-pink navbar-expand-lg">
+	<div class="container-fluid dahong-container">
+		
+		<!-- Back 화살표 디자인 -->
+		<div class="arrow-left">
+			<%= link_to :back do %>
+				<i class="fas fa-arrow-left"></i>
+			<% end %>
+		</div>
+		
+		<!-- global navbar 의 중앙 로고 담당 -->
+		
+		<div class="navbar-brand">
+			<%= link_to root_path, id: 'logo', class: 'mx-auto' do %>
+				<div class="logo_text">ㄷㅎ</div>
+			<% end %>
+		</div>
+			
+		
+		<!-- Navbar의 우측 토글러 -->
+   	<div class="dropdown dahong-dropdown">
+   		
+		  <button class="btn dahong-color dahong-gnb-dropdown-btn" type="button" id="nav_toggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="navbar-toggler-icon navbar-toggler-sizing "></span>
+		  </button>
+		  
+		  <div class="dropdown-menu dropdown-menu-right dahong-color dahong-gnb-dropdown" aria-labelledby="dropdownMenu2">
+		  
+		  	<!--
+		  	<li class="nav-item"><div class="nav_item">
+		  		-->
+
+			  	<!--
+			  </div></li>
+			  	-->
+			  <!--link_to tag내부에 클래스  class: 'nav-link active' 들어가 있었음-->
+		  
+		    
+		    	
+		   	<% if user_signed_in? %>
+		   <!--로그인 되었을 때: 유저정보 수정칸+ 로그아웃 칸-->
+			    <%= link_to edit_user_registration_url do %>
+			      <button class="dropdown-item  dahong-font-k" type="button">나의 정보</button>
+			    <%end%> 
+					<%= link_to  destroy_user_session_path, method: :delete, data:{ confirm: "정말로 로그아웃 하시겠습니까?"} do %>
+						<button class="dropdown-item dahong-font-k" type="button">로그아웃</button>
+							<% end %>
+			  <% else %>
+			  <!--로그인되지 않은 상태: 로그인 하는 버튼-->
+						<%= link_to  new_user_session_url do %>
+							<button class="dropdown-item dahong-font-k" type="button"> 로그인 </button>
+						<% end %>
+			  <% end %>		   
+			  
+			  	<% if user_signed_in? %>
+		    	<!--로그인 되었을 때: 점포 등록, 점포 정보 수정칸-->
+		    		<%= link_to  new_store_url do %>
+		    		  <button class="dropdown-item  dahong-font-k" type="button">가게 등록	</button>	
+		    		 <% end %>
+		    		 <!-- link_to edit_store_url do -->
+		    		 <!-- <button class="dropdown-item dahong-font" type="button"> Store Info Edit </button>-->
+		    		 <!-- end-->
+		    	<% else %>
+		    	<!--로그인되지 않은 상태: 로그인창으로-->
+		    		<%= link_to  new_user_session_url, data:{ confirm: "로그인부터 해주세요"} do %> <button class="dropdown-item  dahong-font-k" type="button">가게 등록</button>	
+		    		<% end %>
+		    	<% end %>
+		  </div>
+		</div>
+
+	
+	
+	 
+		
+		
+	</div>
+</header>

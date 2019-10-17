@@ -1,0 +1,24 @@
+
+<link rel="stylesheet" href="/assets/login.css.scss"> 
+
+<div class ="dahong-login-position-box">
+  <div class="login-header">
+    <h2><%= t(".sign_up") %></h2></br>
+  </div>
+
+  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+  
+    <div class="form-inputs text-left">
+      <%= f.input :email, required: true, autofocus: true %>
+      <%= f.input :password, required: true, hint: (t('devise.shared.minimum_password_length', count: @minimum_password_length) if @minimum_password_length) %>
+      <%= f.input :password_confirmation, required: true %>
+    </div>
+  
+    <div class="form-actions">
+      <%= f.button :submit, t(".sign_up"), style: "background-color: #ff6c6c; color: white;" %>
+    </div>
+  <% end %>
+  
+  <%= render "devise/shared/links" %>
+</div>

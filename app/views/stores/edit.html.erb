@@ -1,0 +1,101 @@
+
+<link rel="stylesheet" href="/assets/store_new.css.scss"> 
+
+
+
+
+
+
+
+<div class ="dahong-newstore-position-box">
+  <div><h3 class = "dahong-newstore-title">가게 수정 페이지</h3></div>
+  
+<% if @store.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@store.errors.count, "error") %> 때문에 이 글을 저장할 수 없습니다:</h2>
+    
+    <ul>
+    <% @store.errors.full_messages.each do |msg| %>
+     
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+   <%= form_for @store do |f| %>
+ 
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label '점포이름' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.text_field :store_name %></span></div>  
+           
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'점포 종류' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.select(:store_category) do %>
+                  <% [ ['식당', '식당'], ['카페', '카페'],
+                       ['가구점', '가구점'], ['노래방', '노래방'],
+                       ['옷집', '옷집'], ['PC방', 'PC방'],
+                       ['술집', '술집'], ['서점', '서점'] ].each do |c| -%>
+                  <%= content_tag(:option, c.first, value: c.last) %>
+                  <% end %>
+                  <% end %></span></div>
+                  
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'주소' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.text_field :address %></span></div>
+           
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'상세주소' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.text_field :detail_address %></span></div>
+           
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'연락처' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.telephone_field :contact %></span></div>
+
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'한줄소개' %></span>
+           <span class = "dahong-newstore-inputbox"><%= f.text_field :short_content %></span></div>
+           
+                 
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'상세소개' %></span> <br><br>
+    
+        <%= f.text_area :detail_content, :class => "tinymce", :rows => 40, :cols => 90 %>
+
+        <%= tinymce %>
+        <script type="text/javascript">
+          tinyMCE.init({
+                          mode : "textareas",
+                          theme : "advanced",
+                          force_br_newlines : false,
+                          force_p_newlines : false,
+                          forced_root_block : '',
+          });
+        </script>        
+                  
+       </div>
+      <div class="dahong-newstore-row">
+        <span class = "dahong-newstore-label"><%= f.label :'사진' %>
+        <span style="float:right;margin-right:10px;color:#ff6c6c">*대표사진</span></span>
+      
+
+
+           <span class = "dahong-newstore-inputbox"><%= f.file_field :photo  %> 
+                                                     <%= f.file_field :photo2 %>
+                                                     <%= f.file_field :photo3 %></span></div>
+     
+     <div class ="dahong-newstore-submit" >
+       <%= f.submit "홍보" %>
+       <%= image_tag @store.photo.url(:thumb) %>
+              <%= image_tag @store.photo2.url(:thumb) %>       <%= image_tag @store.photo3.url(:thumb) %>
+              
+       </div>
+   </div>
+    
+   
+<% end %>
+
+  </div>
+ 
+</div>
+</div>

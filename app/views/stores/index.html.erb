@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/assets/store_index.css.scss"> 
+
+<div class="dahong-map-list-title"><%= @category %></div>
+<%= link_to home_map_url(store_category: @category) do %>
+    <button class="dahong-map-list-change-btn">지도로 보기</button>
+<% end %>
+
+<div class="dahong-list-search-field">
+<%= form_tag("/stores/result", method: "get") do %>
+  
+    <%= search_field(:store, :store_name) %>
+  
+  <%= submit_tag("Search") %>
+<% end %>
+ 
+ 
+ <% if flash[:fail] %>
+   <%= flash[:fail] %></div>
+  <% end %>
+  
+</div>
+
+
+<div class="dahong-float-clear"></div>
+<div class="dahong-map-list-wrap">
+<div class="row dahong-map-list-row">
+  
+   <% @stores.each do |store| %>
+    <div class="col-xl-4 col-md-6 col-12 dahong-list-component-layout ">
+      <div class = "dahong-list-card-layout shadow lifted">
+        <%= link_to  store_path(store) do %>
+        <div class = "dahong-list-photo"><%= image_tag store.photo.url(:thumb) %></div>
+        <div class = "dahong-list-storename" ><%= store.store_name %></div>
+        <div class = "dahong-list-address"><%= store.address %></div>
+        <div class = "dahong-list-contact"><%= store.contact %></div>
+        <div class = "dahong-list-content"><%= store.short_content %></div>
+   
+        <% end %>
+        
+      </div>
+    </div>
+  <% end %>
+   
+</div>
+</div>

@@ -1,0 +1,128 @@
+<head>
+  <link rel="stylesheet" href="/assets/store_show.scss">   
+  <link rel="stylesheet" href="/assets/store.scss">   
+</head>
+
+<body>
+  <% if flash[:fail] %>
+    <p style="
+    text-align: center;
+	  color: #ff5050;
+	  font-weight: bold;
+	  font-size: 2rem;
+	  margin: 10%;
+	  padding: 3%;"><%= flash[:fail] %></p>
+  <% end %>
+  <!--가게 이름-->
+  <section class = 'StoreInfo_Title'>
+    <div style="text-align: center; margin-bottom: 3%"> 
+      <h2 class="dahong-store-show-store_name"><strong> <%= @store.store_name%> </strong></h2>
+    </div>
+  </section>
+  
+  <div class="container-fluid dahong-h-center" >
+    <!--캐러셀(가게사진)-->
+    <section class = 'StoreInfo_Photo'>
+      <div id="myCarousel" class="carousel slide  dahong-h-center dahong-h-carousel" data-ride="carousel">
+        <!-- 몇번째 사진인지 알려주는 indicator -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img class="dahong-h-c-image" src=<%= @store.photo%> >
+          </div>
+          <div class="item">
+            <img class="dahong-h-c-image" src=<%= @store.photo2 %>>
+          </div>
+          <div class="item">
+            <img class="dahong-h-c-image" src=<%= @store.photo3 %>>
+          </div>
+        </div>
+        
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>        
+
+        <!--가게 상세 설명이 들어갈 부분-->
+        
+    <section class = 'StoreInfo_Body'> 
+      <div class="container fluid" style="margin-top: 3%; margin-bottom: 10%;">
+          <div class="row">
+           <div class="col dahong-show-col">
+              <div class = "dahong-list-address"><p><strong>주소</strong></p></div>
+          </div>
+          <div class="col-9 dahong-h-p">
+            <%= @store.address %>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col dahong-show-col">
+              <div class = "dahong-list-contact"><p><strong>연락처</strong></div>
+            </div>
+          <div class="col-9 dahong-h-p">
+            <a href="tel:<%= @store.contact %>"> <%= @store.contact %></a>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col dahong-show-col">
+              <div class = "dahong-list-content"><p><strong>한마디</strong></div>
+            </div>
+          <div class="col-9 dahong-h-p">
+            <%= @store.short_content %>
+          </div>
+        </div>
+          <div class="row">
+            <div class="col dahong-show-col">
+              <p class="dahong-show-detailcontent"><strong>소개글</strong></p>
+            </div>
+          <div class="col-9 dahong-h-p">
+            <%= raw @store.detail_content %>
+          </div>
+        </div>
+       
+      </div>
+
+        
+      
+    </section>
+    
+      
+      
+
+  </div>
+       
+        
+  <div class="row row_for_show">
+   
+    <div class="col col_for_show">
+      <%= link_to edit_store_path(@store) do %>
+      <button class ="dahong-store-edit-btn"> 수정하기 </button> 
+      <!--<button class ="btn btn-block"> 수정하기 </button> -->
+    <% end %>
+    </div>
+     <div class="col col_for_show">
+      <%= link_to store_path(@store), method: :delete, data: { confirm: '진삭?' } do %>
+        <button class ="dahong-store-delete-btn"> 삭제하기 </button> 
+        <!--<button class ="btn btn-block"> 삭제하기 </button> -->
+      <% end %>
+    </div>
+  </div>
+  
+  <div id="h-footer">
+    <p></p>
+  </div>
+
+</body>

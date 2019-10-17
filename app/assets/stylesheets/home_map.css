@@ -1,0 +1,98 @@
+
+/*그리고 이것은 아래 grid와 float관계를 끊어주기 위해서 */
+.dahong-float-clear{
+  clear: both;
+}
+
+.dahong-map-list-row{
+  margin: 0px;
+}
+
+
+
+/*맵 보여주는 페이지 레이아웃 */
+.dahong-map-layout {
+  border: 2px black solid;
+  margin: 0.5% 1%; 
+  
+}
+
+/*맵과 리스트를 오가는 버튼을 우상단에 위치 */
+.dahong-map-list-change-btn {
+  float: right;
+  display: inline-block;
+  margin-right: 5%; 
+  margin-bottom: 0.7em;
+  background-color: #ff6c6c; 
+  color: white;
+  border: 0px #ff6c6c solid;
+  border-radius: 20px;
+  font-size: 0.8em;
+  width: 11vh;
+  height: 3.5vh;
+}
+
+
+/* 맵과 리스트의 분류제목*/ 
+.dahong-map-list-title{
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Stylish';
+  letter-spacing: 0.2em;
+}
+
+/* map list페이지의 grid를 쓰기 위해서 일단 row의 좌우 여백을 주자 */
+.dahong-map-list-wrap {
+  margin-left: 2%;
+  margin-right: 2%; 
+  
+}
+
+.dahong-myloc-logo {
+
+  width:33px;
+  margin:1em 9px 0;
+}
+
+.dahong-map-card{
+  width:240px;
+  height: auto;
+  padding: 5%;
+}
+.dahong-map-photo> img{
+ height: 80px;
+ width: 80px;
+ 
+}
+
+
+.dahong-map-photo{
+  float:left;
+  display: inline-block;
+}
+.dahong-map-storename,.dahong-map-address,.dahong-map-contact,.dahong-map-content{
+  display: inline-block;
+  width:60%;
+  padding: 2% 0 0 2%;
+  float:right;
+  font-size:0.7em;
+   font-family: 'Nanum Gothic', sans-serif;
+}
+
+.dahong-map-storename{
+  font-size:0.9em;
+  font-weight: bold;
+  font-family: 'Stylish', cursive;
+}
+
+.dahong-map-content{
+  padding-top: 5%;
+  font-size: 0.8em;
+  width: 80%;
+  float:left;
+  padding-bottom:5%;
+}
+
+
+                  

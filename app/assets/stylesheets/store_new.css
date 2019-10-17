@@ -1,0 +1,148 @@
+/* dahong new store page */
+.dahong-newstore-row{
+  margin: 1% 0;
+}
+/*여기는 newstore page의 레이아웃 */
+.dahong-newstore-submit {
+  margin: 0 auto;
+  width:80%;
+  margin-top: 3%; 
+}
+.dahong-newstore-submit > input {
+  background-color: #ff6c6c; 
+    color: white;
+    border: 0px #ff6c6c solid;
+    border-radius: 20px;
+  
+}
+
+
+/*미디어 쿼리 이용 new store 디자인 크기변경 */
+textarea, input{
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 500px){
+  .dahong-newstore-position-box{
+    margin: 10% 20%;
+    text-align: left; 
+  }
+  
+    .dahong-newstore-label{
+     width: 100%;
+     display:block;
+     float: left;
+       font-family: 'Nanum Gothic', sans-serif;
+  }
+    .dahong-newstore-inputbox{
+     width: 100%;
+     display:block;
+     margin: 0 0 2%  0;
+    }
+}
+@media screen and (min-width:500px ){
+  .dahong-newstore-position-box {
+    margin: 10% 20%;
+    text-align: left; 
+    }
+    
+    .dahong-newstore-label{
+     width: 15%;
+     display:inline-block;
+     float: left;
+     padding: 5px 0;
+       font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+    .dahong-newstore-inputbox{
+     width: 75%;
+      display:inline-block;
+      padding: 5px 0;
+    }
+    .dahong-address-search-btn {
+      display:inline-block;
+      border: none;
+      width:auto;
+    }
+}
+@media screen and (min-width: 800px){
+  
+  .dahong-newstore-position-box {
+    margin: 10% 20%;
+    text-align: left; 
+  }
+  
+    .dahong-newstore-label{
+     width: 25%;
+     display:inline-block;
+     float: left;
+     padding: 5px 0;
+       font-family: 'Nanum Gothic', sans-serif;
+    }
+    
+    .dahong-newstore-inputbox{
+     width: 65%;
+     display:inline-block;
+     padding: 5px 0;
+    }
+}
+.dahong-newstore-title{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 5%
+  
+  
+}
+
+
+/* */
+.file_input_textbox{
+float: left
+}
+
+.file_input_div{
+position: relative;
+width: 100px;
+height: 23px;
+overflow: hidden;
+}
+
+.data_input_div{
+position: relative;
+width: 100px;
+height: 23px;
+overflow: hidden;
+}
+
+.file_input_hidden{
+font-size: 23px;
+position: absolute;
+right: 0px;
+top: 0px;
+cursor: pointer;
+opacity: 0;
+
+filter: alpha(opacity=0);
+-ms-filter: "alpha(opacity=0)";
+-khtml-opacity: 0;
+-moz-opacity: 0;
+}
+
+.file_input_button{
+width: 100px;
+position: absolute;
+top: 0px;
+background-color: #33BB00;
+color: #FFFFFF;
+border-style: solid;
+}
+
+.data_input_button{
+width: 100px;
+position: absolute;
+top: 0px;
+background-color: #33BB00;
+color: #FFFFFF;
+border-style: solid;
+}
+

@@ -1,0 +1,126 @@
+/*맵과 리스트를 오가는 버튼을 좌상단에 위치 */
+.dahong-map-list-change-btn{
+  float: right;
+  display: inline-block;
+  margin-right: 5%;
+  
+    background-color: #ff6c6c; 
+    color: white;
+    border: 0px #ff6c6c solid;
+    border-radius: 20px;
+  font-size: 0.8em;
+}
+/*그리고 이것은 아래 grid와 float관계를 끊어주기 위해서 */
+.dahong-float-clear{
+  clear: both;
+}
+/* map list페이지의 grid를 쓰기 위해서 일단 row의 좌우 여백을 주자 */
+.dahong-map-list-wrap{
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+//기본적으로 bootstrap에 row에 들어가 있는 margin값 제거
+.dahong-map-list-row{
+  margin: 0px;
+}
+///////////////////////////////
+///////// List Page //////////
+/////////////////////////////
+
+
+
+
+///////////////////////////////////////////////////
+.dahong-list-component-layout{
+  margin: 2% 0;
+
+}
+
+.dahong-list-card-layout{
+  height: 180px;
+  width:  100%;
+
+}
+@media screen and (min-width: 1500px){
+  .dahong-list-card-layout{
+    height: auto;
+  
+  }
+}
+
+.dahong-list-search-field {
+  margin-left: 5%;
+  input[type=search] {
+    display: inline-block;
+    width: 40%;
+    border-radius: 3px;
+    border-style: 1px solid #DDDDDD;
+  }
+  input[type=submit] {
+    border-radius: 5px;
+    border: none;
+    background-color: #ff6c6c;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+}
+input:focus, input[type]:focus, .uneditable-input:focus:focus {
+  // outline: none !important; 
+  box-shadow: 0 0 5px rgba(255, 80, 80, 1);
+  outline-color: #ff5050;
+}
+.dahong-list-search-btn {
+  display: inline-block;
+  margin-left: 5%; 
+  
+}
+
+  
+.dahong-list-photo > img{
+    width:80px;
+  height: 80px;
+  border-radius: 10px;
+}  
+.dahong-list-photo {
+
+  display: inline-block;
+
+  float: left;
+  margin: 5% 0 0 5%;
+}
+/* list page 의 카드 만들어주기 */
+.dahong-list-storename, .dahong-list-address, 
+.dahong-list-contact,.dahong-list-content{
+  font-size:0.8em;
+  display: inline-block; 
+  width: 63%;
+  padding: 1% 1% 1% 5% ;
+  
+}
+.dahong-list-storename {
+  font-weight: 1000;
+  font-size: 1.1em;
+  margin-top: 2.5%;
+  font-family: 'Stylish', cursive;}
+
+.dahong-list-address{
+  margin-top: 0.2%;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+.dahong-list-contact {
+  margin-top: 0.2%;
+  font-family: 'Nanum Gothic', sans-serif;}
+
+.dahong-list-content {
+  width: 85%;
+  margin: 3% 7%;
+  padding: 1%;
+  font-family: 'Nanum Gothic', sans-serif;}
+
+.dahong-map-list-title {
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  font-family: 'Stylish'}

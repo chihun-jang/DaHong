@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/assets/login.css.scss"> 
+
+<div class ="dahong-login-position-box">
+  <div class="login-header">
+    <h2 ><%= t(".sign_in") %></h2></br>
+  </div>
+  
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="form-inputs text-left">
+      <%= f.input :email, required: false, autofocus: true %>
+      <%= f.input :password, required: false %>
+      <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+    </div>
+  
+    <div class="form-actions">  
+      <%= f.button :submit, t(".sign_in"), class: "sign_in_btn", style: "background-color: #ff6c6c; color: white;" %>
+    </div>
+  <% end %>
+  
+  <%= render "devise/shared/links" %>
+</div>

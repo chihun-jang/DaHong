@@ -1,0 +1,214 @@
+
+.bg-pink {
+  background-color: #ff5050 !important;
+}
+
+// .header_margin {
+// 	margin-bottom: 150px;
+// 	header.navbar {
+// 		padding: 0%;
+// 	}
+// }
+
+header.navbar {
+	padding: 0%;
+}
+
+.navbar-brand {
+	margin-left: auto; !important
+	margin-right: auto; !important
+	.logo_text {
+		font-size: 2rem;
+		font-family: 'Black Han Sans', sans-serif;
+		font-weight: 400;
+		text-align: center;
+		color: white;
+	}
+}
+
+.arrow-left {
+	position: absolute;
+	left: 40px;
+	top: 20%;
+	font-size: 2.5rem;
+	a {
+		color: #ffa6b4;
+	}
+}
+
+.toggler-right {
+	position: absolute;
+	right: 30px;
+	top: 20%;
+}
+
+img.nav_logo {
+	max-height: 100px;
+	max-width: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+button#nav_toggler {
+	// margin-right: -30px;
+	.navbar-toggler-sizing {
+		font-size: 20px;
+	}
+}
+
+.nav_item {
+	font-size: 1rem;
+	margin-bottom: 20px;
+}
+
+/* header_for_list */
+.navbar-filter {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #ffa6b4;
+}
+
+/* header_for_filter */
+.navbar-refresh {
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #ffa6b4;
+}
+
+/////////////////////////////////////////////////////////////////////////////
+
+.bg-pink {
+  background-color: #ff5050 !important; 
+  /*따로 만들 필요 없이 header부분을 이쁘게  띄워주기위해서 */
+  margin-bottom: 3%;
+  
+}
+
+header.navbar {
+  padding: 0%; }
+
+
+
+img.nav_logo {
+  max-height: 100px;
+  max-width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+button#nav_toggler .navbar-toggler-sizing {
+  font-size: 20px;
+  
+}
+
+
+
+/* header_for_list */
+.navbar-filter {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffa6b4; }
+ 
+ /*해상도에 맞춰 상단 네브바의 위치 설정 */
+@media screen and (max-width : 500px){
+ .dahong-container{
+    margin: 0 5%;
+    width:100%;
+    
+    
+}
+/* 드롭다운시 뜨는 메뉴 custom */
+.dahong-gnb-dropdown{
+  margin-top: 15px;
+}
+}
+@media screen and (min-width :500px){
+  .dahong-container{
+    margin: 0 7%;
+     width:100%;
+  
+}
+ /* 드롭다운시 뜨는 메뉴 custom */
+.dahong-gnb-dropdown{
+  margin-top: 30px;
+}
+}
+/*아마도 ㄷ ㅎ 글자 가운데 정렬 */
+.navbar-brand {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  
+}
+
+.navbar-brand .logo_text {
+    font-size: 2rem;
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: white; 
+    
+  }
+    
+/*왼쪽 화살표 만들기*/
+.arrow-left {
+  display: inline-block;
+  
+  font-size: 1.5rem; 
+  
+}
+  
+  
+.arrow-left a {
+  color: #ffa6b4; 
+  
+}
+
+/* header_for_filter */
+.navbar-refresh {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffa6b4; }
+/* dahong의 GNB color 찐다홍 베이비핑크 */
+.dahong-color{
+    background-color: #ff5050;
+}
+.dahong-light-color {
+ background-color:  #ffa6b4;
+}
+/* 얘는 하이퍼링크 기본 파란글자 보기싫어서 */
+a{
+  color: black;
+}
+
+/*다홍 드롭다운버튼의 패딩을 없애줌으로 ㄷㅎ 이 가운데 올수있도록 */
+.dahong-gnb-dropdown-btn{
+  border: 0;
+  padding: 6px 0;
+}
+
+/*다홍 드롭다운 파트 위치 설정 */
+.dahong-dropdown{
+  display: inline-block;
+  float: right;
+  
+}
+
+/*드롭 다운 내부 itme 디자인 --예은 */
+.dropdown-item {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.dahong-font{
+  font-family: 'KoHo', sans-serif;
+  font-size: 1.3em;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+/*# sourceMappingURL=header.css.map */

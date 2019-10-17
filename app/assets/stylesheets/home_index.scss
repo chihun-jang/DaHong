@@ -1,0 +1,256 @@
+.dahong-category-border {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc!important;
+  padding: 0.01em 16px;
+  border-radius: 3px;
+  padding-bottom: 80%;
+  .dahong-category-border-inner {
+    top: 0;
+	  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .dahong-category-border-inner:hover {
+    cursor: pointer;
+    color: #6d6d6d;
+  }
+  
+  #restaurants {
+    background-color: #ffd4d4;
+  }
+  #coffee {
+    background-color: #ffd1a9;
+  }
+  #clothes {
+    background-color: #bee4ff;
+  }
+  #bars {
+    background-color: #ffc904;
+  }
+  #studyrooms {
+    background-color: #ccffe5; 
+  }
+  #etc {
+    background-color: #e0e0e0;
+  }
+  
+  
+  
+  .dahong-category-inner-content {
+    position: absolute;   
+    width: auto;
+    height: 50%;
+    top: 0;               
+    bottom: 0;            
+    left: 0;
+    right: 0;             
+    margin: auto;   
+  }
+}
+.dahong-category-border:after {
+  padding-bottom: 100%;
+}
+.col-6.y-padding-edit {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.y-margin-edit {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+footer {
+  margin-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  p.dahong-team-name {
+    font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 300;
+		text-align: center;
+		font-size: 1rem;
+  }
+  p.dahong-team-members {
+    font-family: 'Noto Sans KR', sans-serif;
+		font-weight: 300;
+		text-align: center;
+		font-size: 0.8rem;
+  }
+}
+
+//////////////////////////////////
+.dahong-category-border {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ccc !important;
+  padding: 0.01em 16px;
+  border-radius: 3px;
+  padding-bottom: 80%; }
+.dahong-category-border .dahong-category-border-inner {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+.dahong-category-border .dahong-category-border-inner:hover {
+  cursor: pointer;
+  color: #6d6d6d; }
+.dahong-category-border #restaurants {
+  background-color: #ff6868; }
+.dahong-category-border #coffee {
+  background-color: #c78246; }
+.dahong-category-border #clothes {
+  background-color: #449ddc; }
+.dahong-category-border #bars {
+  background-color: #ffc801; }
+.dahong-category-border #studyrooms {
+  background-color: #44dc8f; }
+.dahong-category-border #etc {
+  background-color: #bfbaba; }
+.dahong-category-border .dahong-category-inner-content {
+  position: absolute;
+  width: auto;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.category-changed-color {
+  color: white;
+  font-style: bold;
+}
+.dahong-category-border:after {
+  padding-bottom: 100%; 
+}
+
+.col-6.y-padding-edit {
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 6px;
+  }
+
+.y-margin-edit {
+  margin-left: 5%;
+  margin-right: 5%; }
+
+footer {
+  margin-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+footer p.dahong-team-name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1rem; 
+}
+footer p.dahong-team-members {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* Mobile Small */
+@media screen and (max-device-width : 424px) {
+  .category-icon {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+  }
+}
+/* Mobile Medium */
+@media screen and (min-device-width : 375px) and (max-device-width : 424px) {
+  .category-icon {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+  }
+}
+/* Mobile Large */
+@media screen and (min-device-width : 425px) and (max-device-width : 767px) {
+  .category-icon {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+  }
+}
+/* Tablet */
+@media screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+  .category-icon {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+  }
+}
+/* Laptop */
+@media screen and (min-device-width : 1024px) and (max-device-width : 1339px) {
+  .category-icon {
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+  }
+}
+/* Laptop Large */
+@media screen and (min-device-width : 1440px) and (max-device-width : 2559px) {
+  .category-icon {
+    text-align: center;
+    font-size: 7rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 4.5rem;
+    color: white;
+  }
+}
+/* 4K */
+@media screen and (min-device-width : 2560px) {
+  .category-icon {
+    text-align: center;
+    font-size: 13rem;
+    color: white;
+    margin-bottom: 0px;
+  }
+  .category-text {
+    text-align: center;
+    font-size: 7.5rem;
+    color: white;
+  }
+}
+
+
+/*# sourceMappingURL=index.css.map */

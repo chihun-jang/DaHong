@@ -1,0 +1,47 @@
+
+/*그리고 이것은 아래 grid와 float관계를 끊어주기 위해서 */
+.dahong-float-clear{
+  clear: both;
+}
+
+//기본적으로 bootstrap에 row에 들어가 있는 margin값 제거
+.dahong-map-list-row{
+  margin: 0px;
+}
+
+////////////////////////////////////
+
+/*맵 보여주는 페이지 레이아웃 */
+.dahong-map-layout {
+  border: 2px black solid;
+  margin: 0.5% 1%; 
+  
+}
+
+/*맵과 리스트를 오가는 버튼을 우상단에 위치 */
+.dahong-map-list-change-btn {
+  float: right;
+  display: inline-block;
+  margin-right: 5%; 
+  
+   background-color: #ff6c6c; 
+    color: white;
+    border: 0px #ff6c6c solid;
+    border-radius: 20px;
+  font-size: 0.8em;
+}
+
+
+/* 맵과 리스트의 분류제목*/ 
+.dahong-map-list-title{
+  text-align: center;
+  font-size: 1.5em;
+  
+}
+
+/* map list페이지의 grid를 쓰기 위해서 일단 row의 좌우 여백을 주자 */
+.dahong-map-list-wrap {
+  margin-left: 2%;
+  margin-right: 2%; 
+  
+}

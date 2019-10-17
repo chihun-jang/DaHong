@@ -1,0 +1,170 @@
+<styles>
+  <link rel="stylesheet" href="/assets/home_index.scss">   
+</styles>
+
+
+<article class = "Main_article">
+  <div class="row y-margin-edit">
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+      <div class="dahong-category-border">  
+
+        
+        <%= link_to home_map_path(store_category: '식당') do %> 
+   
+            
+         
+          <div class="dahong-category-border-inner" id="restaurants">
+            <div class="dahong-category-inner-content">
+              <!--모바일-->
+              <div class="d-block d-xs-block d-sm-none d-md-none">
+                <p class="category-icon"><i class="fas fa-utensils  "></i></p>
+                <p class="category-text">식당</p>
+              </div>
+              <!--태블릿-->
+              <div class="d-none d-sm-block d-md-none d-lg-none">
+                <p class="category-icon"><i class="fas fa-utensils  "></i></p>
+                <p class="category-text" >식당</p>
+              </div>
+              <!--데스크탑-->
+              <div class="d-none d-sm-block d-md-block">
+                <p class="category-icon"><i class="fas fa-utensils  "></i></p>
+                <p class="category-text" >식당</p>
+              </div>
+            </div>
+          </div>
+      
+         <% end %>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+      <div class="dahong-category-border">
+        <%= link_to home_map_url(store_category: "카페") do %>
+          <div class="dahong-category-border-inner" id="coffee">
+            <div class="dahong-category-inner-content">
+              <!--모바일-->
+              <div class="d-block d-xs-block d-sm-none d-md-none">
+                <p class="category-icon"><i class="fas fa-coffee  "></i></p>
+                <p class="category-text">카페</p>
+              </div>
+              <!--태블릿-->
+              <div class="d-none d-sm-block d-md-none d-lg-none">
+                <p class="category-icon"><i class="fas fa-coffee  "></i></p>
+                <p class="category-text" >카페</p>
+              </div>
+              <!--데스크탑-->
+              <div class="d-none d-sm-block d-md-block">
+                <p class="category-icon"><i class="fas fa-coffee  "></i></p>
+                <p class="category-text" >카페</p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+      <div class="dahong-category-border">
+        <%= link_to home_map_url(store_category: "옷가게") do %>
+          <div class="dahong-category-border-inner" id="clothes">
+            <div class="dahong-category-inner-content">
+              <!--모바일-->
+              <div class="d-block d-xs-block d-sm-none d-md-none">
+                <p class="category-icon"><i class="fas fa-tshirt  "></i></p>
+                <p class="category-text">옷가게</p>
+              </div>
+              <!--태블릿-->
+              <div class="d-none d-sm-block d-md-none d-lg-none">
+                <p class="category-icon"><i class="fas fa-tshirt  "></i></p>
+                <p class="category-text" >옷가게</p>
+              </div>
+              <!--데스크탑-->
+              <div class="d-none d-sm-block d-md-block">
+                <p class="category-icon"><i class="fas fa-tshirt  "></i></p>
+                <p class="category-text" >옷가게</p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+      <div class="dahong-category-border">
+        <%= link_to home_map_url(store_category: "술집") do %>
+          <div class="dahong-category-border-inner" id="bars">
+            <div class="dahong-category-inner-content">
+              <!--모바일-->
+              <div class="d-block d-xs-block d-sm-none d-md-none">
+                <p class="category-icon"><i class="fas fa-beer  "></i></p>
+                <p class="category-text">술집</p>
+              </div>
+              <!--태블릿-->
+              <div class="d-none d-sm-block d-md-none d-lg-none">
+                <p class="category-icon"><i class="fas fa-beer  "></i></p>
+                <p class="category-text" >술집</p>
+              </div>
+              <!--데스크탑-->
+              <div class="d-none d-sm-block d-md-block">
+                <p class="category-icon"><i class="fas fa-beer  "></i></p>
+                <p class="category-text" >술집</p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+      <div class="dahong-category-border">
+        <%= link_to home_map_url(store_category: "스터디룸") do %>
+          <div class="dahong-category-border-inner" id="studyrooms">
+            <div class="dahong-category-inner-content">
+              <!--모바일-->
+              <div class="d-block d-xs-block d-sm-none d-md-none">
+                <p class="category-icon"><i class="fas fa-pencil-alt  "></i></p>
+                <p class="category-text">스터디룸</p>
+              </div>
+              <!--태블릿-->
+              <div class="d-none d-sm-block d-md-none d-lg-none">
+                <p class="category-icon"><i class="fas fa-pencil-alt  "></i></p>
+                <p class="category-text" >스터디룸</p>
+              </div>
+              <!--데스크탑-->
+              <div class="d-none d-sm-block d-md-block">
+                <p class="category-icon"><i class="fas fa-pencil-alt  "></i></p>
+                <p class="category-text" >스터디룸</p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-4 y-padding-edit">
+        <div class="dahong-category-border">
+          <%= link_to home_map_url(store_category: "기타") do %>
+            <div class="dahong-category-border-inner" id="etc">
+              <div class="dahong-category-inner-content">
+                <!--모바일-->
+                <div class="d-block d-xs-block d-sm-none d-md-none">
+                  <p class="category-icon"><i class="fas fa-ellipsis-h  "></i></p>
+                  <p class="category-text">기타</p>
+                </div>
+                <!--태블릿-->
+                <div class="d-none d-sm-block d-md-none d-lg-none">
+                  <p class="category-icon"><i class="fas fa-ellipsis-h  "></i></p>
+                  <p class="category-text" >기타</p>
+                </div>
+                <!--데스크탑-->
+                <div class="d-none d-sm-block d-md-block">
+                  <p class="category-icon"><i class="fas fa-ellipsis-h  "></i></p>
+                  <p class="category-text" >기타</p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+  </div>
+</article>
+<footer class="bg-light">
+  <p class="dahong-team-name">Team DAHONG</p>
+  <p class="dahong-team-members">강동기 박효빈 장치훈 최예은</p>
+</footer>
+

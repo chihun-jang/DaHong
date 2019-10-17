@@ -1,0 +1,109 @@
+.login-header{
+  font-family: 'KoHo', sans-serif;  
+  letter-spacing: 0.5rem;
+}
+.form-check-label.boolean.optional {
+  margin-left: 17px;
+}
+
+
+@media screen and (max-width : 1000px){
+  
+.dahong-login-position-box{
+  margin: 10% 20%;
+  text-align: center;
+}
+
+
+}
+
+
+@media screen and (min-width : 1000px){
+.dahong-login-position-box{
+  margin: 5% 30%;
+  text-align: center;
+}
+
+
+}
+
+
+/*로그인 페이지 하단 텍스트 관리 */
+.dahong-login-help-text{
+  margin: 5% 0;
+  font-size: 0.95em;
+}
+
+
+/* 밑에 미디어 쿼리 적용해서 적당히 login 페이지 좌우 여백 줌 */
+.login-header {
+  font-family: 'KoHo', sans-serif;
+  letter-spacing: 0.5rem; 
+}
+
+.form-check-label.boolean.optional {
+  margin-left: 17px; 
+  
+}
+
+@media screen and (max-width: 1000px) {
+  .dahong-login-position-box {
+    margin: 10% 20%;
+    text-align: center; 
+  }
+    .dahong-mypage-position-box {
+    margin: 10% 20%;
+    /*text-align: center; */
+  }
+  
+  
+}
+@media screen and (min-width: 1000px) {
+  .dahong-login-position-box {
+    margin: 5% 30%;
+    text-align: center; 
+  }
+   .dahong-mypage-position-box {
+    margin: 5% 30%;
+    /*text-align: center; */
+  }
+}
+/*로그인 페이지 하단 텍스트 관리 */
+.dahong-login-help-text {
+  margin: 5% 0;
+  font-size: 0.95em; 
+  
+}
+
+
+@media screen and (max-width: 430px){
+  .dahong-fg-btn{
+    width: 100%;
+    font-size: 0.7em;
+    text-align: center;
+    }
+
+  .dahong-fg-title{
+    width: 145px;
+    margin: 0 auto;
+    } 
+
+}
+
+.dahong-fg-title{
+  margin-bottom: 8%;
+}  
+
+.dahong-mypage-title{
+  font-family: 'Nanum Gothic', sans-serif !important;
+  font-weight: bold;
+  margin-bottom: 5%
+  
+
+}
+.dahong-mypage-canceltitle{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-family: 'Nanum Gothic', sans-serif;
+}
